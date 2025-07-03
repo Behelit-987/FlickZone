@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <title>Sección de Películas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        header {
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        .contenedor {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        .icon-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centra los iconos horizontalmente */
+            gap: 20px;
+            padding: 40px 0; /* Espacio alrededor para centrar mejor */
+            max-width: 1200px;
+            margin: 0 auto; /* Centra la galería en la pantalla */
+        }
+
+        .icon-container a {
+            display: block;
+            width: 200px; /* Tamaño uniforme para los iconos */
+            text-align: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .icon-container a:hover {
+            transform: scale(1.05);
+        }
+
+        .icon-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .icon-container img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h2 class="logotipo">FlickZone/Accion</h2>
+            <nav>
+                <a href="../index.html" class="activo">Inicio</a>
+                <a href="../Series/Series_Iconos.html">Programas</a>
+                <a href="../Peliculas/Peliculas_Iconos.html">Películas</a>
+                <a href="../Mas_Reciente/Lista_Reciente.html">Más Recientes</a>
+                <a href="#">Mi lista</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="icon-container">
+            <a href="../Peliculas_Vista_Accion/Accion_Vista1.html" target="_blank">
+                <img src="../img/Accion/Poster_Accion1.jpg" alt="Terror"> <!-- Imagen para Terror -->
+                <div class="icon-text"></div>
+            </a>
+            <a href="../Peliculas_Vista_Accion/Accion_Vista2.html" target="_blank">
+                <img src="../img/Accion/Poster_Accion2.jpg" alt="Familia"> <!-- Imagen para Familia -->
+                <div class="icon-text"></div>
+            </a>
+            <a href="../Peliculas_Vista_Accion/Accion_Vista3.html" target="_blank">
+                <img src="../img/Accion/Poster_Accion3.jpg" alt="Infantiles"> <!-- Imagen para Infantiles -->
+                <div class="icon-text"></div>
+            </a>
+            <a href="../Peliculas_Vista_Accion/Accion_Vista4.html" target="_blank">
+                <img src="../img/Accion/Poster_Accion4.jpg" alt="Fantasía"> <!-- Imagen para Fantasía -->
+                <div class="icon-text"></div>
+            </a>
+            <a href="../Peliculas_Vista_Accion/Accion_Vista5.html" target="_blank">
+                <img src="../img/Accion/Poster_Accion5.jpg" alt="Ciencia Ficción"> <!-- Imagen para Ciencia Ficción -->
+                <div class="icon-text"></div>
+            </a>
+            <a href="../Peluculas_Vista/" target="_blank">
+                <img src="../img/Accion/Poster_Accion6.jpg" alt="Comedia"> <!-- Imagen para Comedia -->
+                <div class="icon-text"></div>
+            </a>
+            <a href="../Peluculas_Vista/" target="_blank">
+                <img src="../img/Accion/Poster_Accion7.jpg" alt="Animación"> <!-- Imagen para Animación -->
+                <div class="icon-text"></div>
+            </a>
+            <a href="../Peluculas_Vista/" target="_blank">
+                <img src="../img/Accion/Poster_Accion8.jpg" alt="Acción"> <!-- Imagen para Acción -->
+                <div class="icon-text"></div>
+            </a>
+            <a href="../Peluculas_Vista/" target="_blank">
+                <img src="../img/Accion/Poster_Accion9.jpg" alt="Romance"> <!-- Imagen para Romance -->
+                <div class="icon-text"></div>
+            </a>
+            <a href="../Peluculas_Vista/" target="_blank">
+                <img src="../img/Accion/Poster_Accion10.jpg" alt="Crimen"> <!-- Imagen para Crimen -->
+                <div class="icon-text"></div>
+            </a>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

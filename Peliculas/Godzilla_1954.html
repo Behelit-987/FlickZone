@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Videos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Texto en blanco */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Estilos para el área principal del reproductor con anuncios */
+        .video-player-container {
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Alinear verticalmente al centro */
+            width: 90%;
+            max-width: 1200px;
+            margin-bottom: 20px;
+        }
+
+        .ad {
+            width: 10%; /* Anuncios a los lados (10% del ancho total) */
+            text-align: center;
+        }
+
+        .ad img {
+            width: 70%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .video-player {
+            width: 80%; /* El reproductor ocupará el 80% del ancho */
+            margin: 0 10px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #000; /* Fondo negro del reproductor */
+        }
+
+        .video-list {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            overflow-x: auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .video-item {
+            flex: 0 0 auto;
+            width: 200px;
+            margin-right: 15px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .video-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+
+        .video-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .video-item h3 {
+            font-size: 16px;
+            color: #fff; /* Título en blanco */
+        }
+
+        .video-list::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .video-list::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 10px;
+        }
+
+        .video-list::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Área del reproductor con anuncios alineados -->
+    <div class="video-player-container">
+        <!-- Imagen de anuncio a la izquierda -->
+        <div class="ad">
+            <img src="../img/giphy.gif" alt="Anuncio Izquierda">
+        </div>
+
+        <!-- Reproductor de video -->
+        <div class="video-player">
+             <iframe width="100%" height="480" frameborder="0"
+                src="https://mega.nz/embed/wotDVbQY#QWyaTy3DcDGZkViAy1iN0F0J-x6wWTofcujY95lYPIk!1a"
+                allowfullscreen allow="autoplay;"></iframe>
+        </div>
+
+        <!-- Imagen de anuncio a la derecha -->
+        <div class="ad">
+            <img src="../img/giphy-2.gif" alt="Anuncio Derecha">
+        </div>
+    </div>
+
+    <!-- Listado de videos 
+    <div class="video-list">
+        <div class="video-item" onclick="loadVideo('D:/FlickZone_Catalogo/Godzilla - Japon Bajo El Terror Del Monstruo -1954- español.mp4')">
+            <img src="img/fda53df58a17ce40b43d4a3648c9f34fe2ac6cc6f47e5c1370a82fb4a2287ec7.jpg" alt="Portada Video 1">
+            <h3>Yu-Gi-Oh Vrains 01</h3>
+        </div>
+    </div>
+    -->
+</div>
+
+<script>
+    function loadVideo(videoSrc) {
+        const videoPlayer = document.getElementById('videoPlayer');
+        videoPlayer.src = videoSrc;
+        videoPlayer.play();
+    }
+
+    window.onload = function() {
+        // Establecer una fuente predeterminada para el video cuando se cargue la página
+        const defaultVideo = 'https://drive.google.com/uc?export=download&id=1jrv_kYWbDcKwKU--kNE7U5tTRcXwPL4c'; // Aquí pones la ruta del video predeterminado
+        loadVideo(defaultVideo);
+    }
+</script>
+
+</body>
+</html>

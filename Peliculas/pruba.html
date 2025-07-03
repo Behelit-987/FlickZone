@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Videos Locales</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .video-player-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+            margin-bottom: 20px;
+        }
+
+        .video-player {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-list {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            overflow-x: auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .video-item {
+            flex: 0 0 auto;
+            width: 200px;
+            margin-right: 15px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .video-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+
+        .video-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .video-item h3 {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .video-list::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .video-list::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 10px;
+        }
+
+        .video-list::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="video-player-container">
+        <div class="video-player">
+            <video id="videoPlayer" controls>
+                <source src="http://127.0.0.1/videos/perfect%20blue.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    </div>
+
+    <!-- Listado de videos -->
+    <div class="video-list">
+        <div class="video-item" onclick="loadVideo('D:/FlickZone_Catalogo/perfect blue.mp4')">
+            <img src="img/video1.jpg" alt="Portada Video 1">
+            <h3>Video 1</h3>
+        </div>
+        <div class="video-item" onclick="loadVideo('D:/FlickZone_Catalogo/Godzilla - Japon Bajo El Terror Del Monstruo -1954- español.mp4')">
+            <img src="img/video2.jpg" alt="Portada Video 2">
+            <h3>Video 2</h3>
+        </div>
+    </div>
+</div>
+
+<script>
+    function loadVideo(videoSrc) {
+        const videoPlayer = document.getElementById('videoPlayer');
+        videoPlayer.src = videoSrc;
+        videoPlayer.play();
+    }
+</script>
+
+</body>
+</html>
