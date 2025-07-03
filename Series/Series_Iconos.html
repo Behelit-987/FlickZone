@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <title>Seccion de Series</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        header {
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        .contenedor {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        .icon-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centra los iconos horizontalmente */
+            gap: 20px;
+            padding: 40px 0; /* Espacio alrededor para centrar mejor */
+            max-width: 1200px;
+            margin: 0 auto; /* Centra la galería en la pantalla */
+        }
+
+        .icon-container a {
+            display: block;
+            width: 250px; /* Tamaño uniforme para los iconos */
+            text-align: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .icon-container a:hover {
+            transform: scale(1.05);
+        }
+
+        .icon-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .icon-container img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h2 class="logotipo">FlickZone/Series</h2>
+            <nav>
+                <a href="../index.html" class="activo">Inicio</a>
+                <a href="../Series/Series_Iconos.html">Programas</a>
+                <a href="../Peliculas/Peliculas_Iconos.html">Películas</a>
+                <a href="../Mas_Reciente/Lista_Reciente.html">Más Recientes</a>
+                <a href="#">Mi lista</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="icon-container">
+            <a href="../Listado_Series/Listado_Series_Superheroes.html" target="_blank">
+                <img src="../img/Superheroes.png" alt="Ícono 1"> 
+                <div class="icon-text">Superheroes</div>
+            </a>
+            <a href="../Listado_Series/Listado_Series_KDrama.html" target="_blank">
+                <img src="../img/K-Drama.png" alt="Ícono 2">
+                <div class="icon-text">K-Dramas</div>
+            </a>
+            <a href="../Listado_Series/Listado_Series_Sitcoms.html" target="_blank">
+                <img src="../img/Sitcoms.png" alt="Ícono 3">
+                <div class="icon-text">Sitcoms</div>
+            </a>
+            <a href="../Listado_Series/Listado_Series_Anime.html" target="_blank">
+                <img src="../img/Anime.png" alt="Ícono 4">
+                <div class="icon-text">Animes</div>
+            </a>
+            <a href="../Listado_Series/Listado_Series_Satiras.html" target="_blank">
+                <img src="../img/Satiras.jpg" alt="Ícono 5">
+                <div class="icon-text">Satiras</div>
+            </a>
+            <a href="../Listado_Series/Listado_Series_SciFi.html" target="_blank">
+                <img src="../img/Sci-fi.png" alt="Ícono 6">
+                <div class="icon-text">Sci-Fi</div>
+            </a>
+            <a href="../Listado_Series/Listado_Series_Thrillers.html" target="_blank">
+                <img src="../img/Thrillers.png" alt="Ícono 7">
+                <div class="icon-text">Thrillers</div>
+            </a>
+            <a href="../Listado_Series/Listado_Series_Sobrenatural.html" target="_blank">
+                <img src="../img/Sobrenatural.jpg" alt="Ícono 8">
+                <div class="icon-text">Sobrenatural</div>
+            </a>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

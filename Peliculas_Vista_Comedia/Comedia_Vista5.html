@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Scream</title>
+    <style>
+        /* Fondo y estilo de página */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        /* Contenedor de la tarjeta de película */
+        .movie-container {
+            width: 80%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            background-color: #1c1c1c;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Imagen de portada de la película */
+        .movie-poster {
+            width: 100%;
+            height: 450px;
+            background-image: url('../img/Comedia/Poster_Comedia5.jpg'); /* Ruta de la imagen de la película */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Contenedor de detalles de la película */
+        .movie-details {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* Título de la película */
+        .movie-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        /* Descripción de la película */
+        .movie-description {
+            font-size: 1rem;
+            color: #d1d5db;
+            line-height: 1.5;
+        }
+
+        /* Botón de reproducción */
+        .play-button {
+            padding: 0.75rem;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            background-color: #e50914;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-align: center;
+            transition: background-color 0.2s;
+        }
+
+        .play-button:hover {
+            background-color: #f40612;
+        }
+    </style>
+</head>
+<body>
+    <div class="movie-container">
+        <!-- Imagen de portada de la película -->
+        <div class="movie-poster"></div>
+
+        <!-- Detalles de la película -->
+        <div class="movie-details">
+            <h2 class="movie-title">Zoolander</h2>
+            <p class="movie-description">
+                
+            </p>
+
+            <!-- Botón de reproducción -->
+            <a href="../Peliculas/AlitaBA.html" class="play-button">Reproducir</a>
+        </div>
+    </div>
+</body>
+</html>
